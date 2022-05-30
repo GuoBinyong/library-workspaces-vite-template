@@ -1,0 +1,7 @@
+{
+  "name": "library-workspaces-vite-template",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^5.0.0"
+  }
+}
