@@ -1,6 +1,14 @@
 {
   "name": "library-workspaces-vite-template",
   "private": true,
+  "scripts": {
+    "install": "lerna bootstrap",
+    "dev": "lerna run dev",
+    "build": "lerna run build",
+    "stage": "lerna run stage",
+    "api": "lerna run api",
+    "doc": "lerna run doc"
+  },
   "devDependencies": {
     "lerna": "^5.0.0"
   }
