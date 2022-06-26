@@ -1,6 +1,7 @@
 {
   "name": "library-workspaces-vite-template",
   "private": true,
+  "packageManager":"pnpm",
   "type": "module",
   "scripts": {
     "dev": "pnpm -r run dev",
