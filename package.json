@@ -1,15 +1,12 @@
 {
   "name": "library-workspaces-vite-template",
   "private": true,
+  "packageManager":"pnpm",
   "scripts": {
-    "install": "lerna bootstrap",
-    "dev": "lerna run dev",
-    "build": "lerna run build",
-    "bunch": "lerna run bunch",
-    "api": "lerna run api",
-    "doc": "lerna run doc"
-  },
-  "devDependencies": {
-    "lerna": "^5.0.0"
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "bunch": "pnpm -r run bunch",
+    "api": "pnpm -r run api",
+    "doc": "pnpm -r run doc"
   }
 }
