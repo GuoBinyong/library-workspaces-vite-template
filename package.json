@@ -3,17 +3,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "init": "lerna bootstrap",
-    "dev": "lerna run dev",
-    "build": "lerna run build",
-    "bunch": "lerna run bunch",
-    "debug": "lerna run debug",
-    "debug:bunch": "lerna run debug:bunch",
-    "api": "lerna run api",
-    "doc": "lerna run doc",
-    "apidoc": "lerna run apidoc"
-  },
-  "devDependencies": {
-    "lerna": "^8.0.2"
+    "dev": "pnpm -r run dev",
+    "build": "pnpm -r run build",
+    "bunch": "pnpm -r run bunch",
+    "debug": "pnpm -r run debug",
+    "debug:bunch": "pnpm -r run debug:bunch",
+    "api": "pnpm -r run api",
+    "doc": "pnpm -r run doc",
+    "apidoc": "pnpm -r run apidoc"
   }
 }
