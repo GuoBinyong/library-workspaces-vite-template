@@ -6,6 +6,7 @@
   "module": "dist/library-vite-template.es.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
+  "packageManager":"pnpm@7.0.0",
   "homepage": "https://github.com/GuoBinyong/library-vite-template#readme",
   "repository": {
     "type": "git",
