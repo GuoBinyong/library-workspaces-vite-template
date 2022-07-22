@@ -5,7 +5,7 @@
     "install": "lerna bootstrap",
     "dev": "lerna run dev",
     "build": "lerna run build",
-    "stage": "lerna run stage",
+    "bunch": "lerna run bunch",
     "api": "lerna run api",
     "doc": "lerna run doc"
   },
