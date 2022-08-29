@@ -180,7 +180,7 @@ function buildFiles(options){
        const fileInfo = parse(relPath);
        const dir = fileInfo.dir;
        const dirReg = dir ? /\[\s*dir\s*\]/g  : /\[\s*dir\s*\]\s*\//g;
-       fileName = fileName.replace(dirReg,dir);
+       const finalFileName = fileName.replace(dirReg,dir);
        
        return  build({
            configFile:false,
@@ -190,7 +190,7 @@ function buildFiles(options){
                    name:fileInfo.name,
                    formats:formats,
                    entry: entryFile,
-                   fileName:fileName,
+                   fileName:finalFileName,
                },
                outDir:outDir,
            }
