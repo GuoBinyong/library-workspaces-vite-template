@@ -11,5 +11,8 @@
     "skipLibCheck": true,
     "useDefineForClassFields": true,
     "noImplicitOverride":true,
+    "paths": {
+      "*": ["node_modules/*"]
+    }
   }
 }
