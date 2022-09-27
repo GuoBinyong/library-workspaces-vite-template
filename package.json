@@ -6,6 +6,8 @@
     "dev": "lerna run dev",
     "build": "lerna run build",
     "bunch": "lerna run bunch",
+    "debug": "lerna run debug",
+    "debug:bunch": "lerna run debug:bunch",
     "api": "lerna run api",
     "doc": "lerna run doc"
   },
