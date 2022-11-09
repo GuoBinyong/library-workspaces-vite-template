@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "target": "ESNext",
     "module": "ESNext",
@@ -11,8 +12,7 @@
     "skipLibCheck": true,
     "useDefineForClassFields": true,
     "noImplicitOverride":true,
-    "paths": {
-      "*": ["node_modules/*"]
-    }
+    "declarationMap": true,
+    "isolatedModules": true
   }
 }
