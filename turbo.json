@@ -1,0 +1,35 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["./dist/**"],
+      "inputs": ["src/**","vite.config.*","tsconfig.*","jsconfig.*","package.json","*-lock.*"]
+    },
+    "bunch": {
+      "dependsOn": ["^build"],
+      "outputs": ["./dist/**"],
+      "inputs": ["src/**","vite.config.*","tsconfig.*","jsconfig.*","package.json","*-lock.*"]
+    },
+    "debug": {
+      "dependsOn": ["^debug"],
+      "outputs": ["./dist/**"],
+      "inputs": ["src/**","vite.config.*","tsconfig.*","jsconfig.*","package.json","*-lock.*"]
+    },
+    "debug:bunch": {
+      "dependsOn": ["^debug"],
+      "outputs": ["./dist/**"],
+      "inputs": ["src/**","vite.config.*","tsconfig.*","jsconfig.*","package.json","*-lock.*"]
+    },
+    "api": {
+      "dependsOn": ["build"],
+      "outputs": ["./temp/**", "./etc/**"],
+      "inputs": ["./dist/**/*.d.ts","api-extractor.*"]
+    },
+    "doc": {
+      "dependsOn": ["api"],
+      "outputs": ["./doc/api/**"],
+      "inputs": ["./temp/**","api-extractor.*"]
+    }
+  }
+}
