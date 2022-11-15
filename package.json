@@ -1,16 +1,17 @@
 {
   "name": "library-workspaces-vite-template",
   "private": true,
-  "packageManager":"pnpm",
   "type": "module",
   "scripts": {
     "dev": "pnpm -r run dev",
-    "build": "pnpm -r run build",
-    "bunch": "pnpm -r run bunch",
-    "debug": "pnpm -r run debug",
-    "debug:bunch": "pnpm -r run debug:bunch",
-    "api": "pnpm -r run api",
-    "doc": "pnpm -r run doc",
-    "apidoc": "pnpm -r run apidoc"
+    "build": "turbo run build",
+    "bunch": "turbo run bunch",
+    "debug": "turbo run debug",
+    "debug:bunch": "turbo run debug:bunch",
+    "api": "turbo run api",
+    "doc": "turbo run doc"
+  },
+  "devDependencies": {
+    "turbo": "^1.10.15"
   }
 }
