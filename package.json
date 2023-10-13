@@ -13,6 +13,6 @@
     "apidoc": "lerna run apidoc"
   },
   "devDependencies": {
-    "lerna": "^6.6.2"
+    "lerna": "^7.3.1"
   }
 }
