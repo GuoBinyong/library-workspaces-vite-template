@@ -2,7 +2,7 @@
 import { defineConfig } from 'vite'
 import shebang from 'rollup-plugin-preserve-shebang';
 import {getDependencieNames,getBaseNameOfHumpFormat} from "package-tls";
-import pkg from "./package.json" assert {type: "json"};
+import pkg from "./package.json" with {type: "json"};
 import {dirname,relative,parse} from "node:path";
 import {build} from "vite";
 import {generate_d_ts,removePath} from "build-tls";
